@@ -1,5 +1,5 @@
-#include "BinarySearchLoop.h"
-#include "BinarySearchRecursive.h"
+#include "binary_search_loop.h"
+#include "binary_search_recursive.h"
 #include "gtest/gtest.h"
 
 template <class T>
