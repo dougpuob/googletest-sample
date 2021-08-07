@@ -45,17 +45,17 @@ TYPED_TEST_P(TestBinarySearch, TwoElementsOnly) {
   EXPECT_EQ(-1, Instance.search(SortedArray, 7));  // Not in the array.
 }
 
-REGISTER_TYPED_TEST_CASE_P(TestBinarySearch,
-                           PositiveInteger,
-                           NegativeInteger,
-                           Integer,
-                           SingleElement,
-                           TwoElementsOnly);
+REGISTER_TYPED_TEST_SUITE_P(TestBinarySearch,
+                            PositiveInteger,
+                            NegativeInteger,
+                            Integer,
+                            SingleElement,
+                            TwoElementsOnly);
 
 typedef ::testing::Types<BinarySearchLoop, BinarySearchRecursive> MyTypes;
-INSTANTIATE_TYPED_TEST_CASE_P(MyBinarySearchInstantiation,
-                              TestBinarySearch,
-                              MyTypes);
+INSTANTIATE_TYPED_TEST_SUITE_P(MyBinarySearchInstantiation,
+                               TestBinarySearch,
+                               MyTypes);
 
 template <>
 BinarySearchLoop TestBinarySearch<BinarySearchLoop>::Instance;
