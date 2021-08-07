@@ -15,3 +15,7 @@ camke --build build --config Release
 cmake -G "Ninja" -B "build" .
 camke --build build --config Release
 ```
+
+Samples
+-------
+- [Test derived function by interface](https://github.com/dougpuob/googletest-sample/blob/master/source/test-derived-func-by-interface/Main.cpp) ([img](https://i.imgur.com/NuduigD.png))
