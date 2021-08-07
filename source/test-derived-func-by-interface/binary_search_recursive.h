@@ -1,6 +1,6 @@
 #pragma once
 
-#include "BinarySearch.h"
+#include "binary_search.h"
 
 class BinarySearchRecursive : BinarySearch {
  public:
