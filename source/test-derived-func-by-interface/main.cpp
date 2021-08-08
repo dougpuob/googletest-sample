@@ -11,10 +11,10 @@ TYPED_TEST_CASE_P(TestBinarySearch);
 
 TYPED_TEST_P(TestBinarySearch, PositiveInteger) {
   std::vector<int> SortedArray = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-  ASSERT_EQ(4, Instance.search(SortedArray, 5));
-  ASSERT_EQ(5, Instance.search(SortedArray, 6));
-  ASSERT_EQ(0, Instance.search(SortedArray, 1));
-  ASSERT_EQ(8, Instance.search(SortedArray, 9));
+  EXPECT_EQ(4, Instance.search(SortedArray, 5));
+  EXPECT_EQ(5, Instance.search(SortedArray, 6));
+  EXPECT_EQ(0, Instance.search(SortedArray, 1));
+  EXPECT_EQ(8, Instance.search(SortedArray, 9));
 }
 
 TYPED_TEST_P(TestBinarySearch, NegativeInteger) {
