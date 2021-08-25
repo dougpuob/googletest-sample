@@ -32,3 +32,4 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 add_subdirectory(submodule/googletest)
 add_subdirectory(source/test-derived-func-by-interface)
+add_subdirectory(source/test-class-by-test-fixture)
