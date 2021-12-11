@@ -11,7 +11,7 @@ env:
   BUILD_TYPE: Release
 
 jobs:
-  build:
+  Windows:
     runs-on: windows-2019
 
     steps:
