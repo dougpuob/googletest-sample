@@ -30,7 +30,8 @@ jobs:
       run: |
         Release/test-derived-func-by-interface
         Release/test-class-by-test-fixture
-      
+
+
   Linux:
     runs-on: ubuntu-18.04
 
@@ -51,7 +52,7 @@ jobs:
         Release/test-derived-func-by-interface
         Release/test-class-by-test-fixture
 
-  Linux:
+  MacOS:
     runs-on: macos-10.15
 
     steps:
