@@ -41,7 +41,9 @@ jobs:
         submodules: true
 
     - name: Prepare
-      run: sudo apt install ninja-build
+      run: |
+        sudo apt install ninja-build
+        sudo apt install gcc g++
     
     - name: Config
       run: cmake -G "Ninja" -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} .
