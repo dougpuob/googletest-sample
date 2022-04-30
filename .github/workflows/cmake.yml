@@ -58,13 +58,17 @@ jobs:
         Release/test-class-by-test-fixture
 
   MacOS:
-    runs-on: macos-10.15
+    runs-on: 	macos-12
 
     steps:
     - uses: actions/checkout@v2 
       with:
         submodules: true
-
+    
+    - name: Prepare
+      run: |
+        brew install ninja
+        
     - name: Config
       run: cmake -G "Ninja" -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} .
 
