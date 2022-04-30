@@ -2,7 +2,7 @@ name: CMake
 
 on:
   push:
-    branches: [ master, m-* ]
+    branches: [ master, m-*, dougpuob-patch-*]
   pull_request:
     branches: [ master, m-* ]
 
