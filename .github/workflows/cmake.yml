@@ -52,8 +52,9 @@ jobs:
     - name: Test
       working-directory: ${{github.workspace}}/build/bin      
       run: |
-        test-derived-func-by-interface
-        test-class-by-test-fixture
+        ls -la
+        ./test-derived-func-by-interface
+        ./test-class-by-test-fixture
 
   MacOS:
     runs-on: macos-10.15
@@ -72,5 +73,6 @@ jobs:
     - name: Test
       working-directory: ${{github.workspace}}/build/bin      
       run: |
-        test-derived-func-by-interface
-        test-class-by-test-fixture
+        ls -la
+        ./test-derived-func-by-interface
+        ./test-class-by-test-fixture
