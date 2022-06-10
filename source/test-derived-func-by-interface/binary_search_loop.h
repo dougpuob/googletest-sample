@@ -2,9 +2,11 @@
 
 #include "binary_search.h"
 
-class BinarySearchLoop : BinarySearch {
- public:
-  int search(std::vector<int>& nums, int target) {
+class BinarySearchLoop : public BinarySearch {
+public:
+  int search() { return 0; }
+
+  int search(std::vector<int> &nums, int target) {
     // std::ios_base::sync_with_stdio(false);
 
     int mid = 0;

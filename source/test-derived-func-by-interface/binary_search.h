@@ -3,5 +3,6 @@
 
 class BinarySearch {
  public:
-  virtual int search(std::vector<int>& nums, int target) = 0;
+   virtual int search() = 0;
+   virtual int search(std::vector<int> &nums, int target) = 0;
 };
